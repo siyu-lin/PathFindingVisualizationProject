@@ -1,10 +1,10 @@
 enum Status{BLANK, BEGIN, END, WALL, PATH};
 
 public class Box{
-  private int x;
-  private int y;
-  private int size;
-  private Status status;
+  private int x; // X-coord of the upper-left corner of the box
+  private int y; // Y-coord of the upper-left corner of the box
+  private int size; // Width and height of the box
+  private Status status; // Status of the box
   
   public Box(int x, int y, int size){
      this.x = x;
@@ -22,8 +22,14 @@ public class Box{
   public void setStatus(Status status) { this.status = status; }
   
   public void display(){
+    // Set the color of the outline black
     stroke(0,0,0);
+    // Set the width of the outline 1 px
     strokeWeight(1);
+    
+    // TODO: Display differently with box having different status
+    
+    // Draw a square with upper-left corner at (x,y) and with side length (size)
     rect(x, y, size, size);
   }
   
