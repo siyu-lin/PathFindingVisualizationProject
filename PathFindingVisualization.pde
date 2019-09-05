@@ -1,8 +1,9 @@
 Box[][] map;
 int boxSize = 40; // Every box in the map is 40 px wide and high
 
-//testing
-
+public void settings() {
+  size(800, 800);
+}
 
 void setup(){
   size(800,800); // Size of the canvas
