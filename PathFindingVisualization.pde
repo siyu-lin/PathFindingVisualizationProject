@@ -25,5 +25,3 @@ void draw() {
     }
   }
 }
-
-int valuex = mouseX;
